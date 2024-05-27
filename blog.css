@@ -1,0 +1,60 @@
+body {
+    background-color: #d7fce5;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.DV-Header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    background: #36ba69;
+    color: white;
+    font-size: 23px;
+}
+
+.DV-Menu {
+    display: flex;
+}
+
+.DV-Menu li {
+    display: block;
+    padding: 10px;
+}
+
+#DV-Destaques {
+    padding-top: 50px;
+    padding-left: 25px;
+    font-size: larger;
+    font-weight: bold;
+    color: #062110;
+}
+
+.DV-Grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: auto;
+    margin: 0 auto;
+    padding: 20px;
+    grid-gap: 20px;
+}
+
+.DV-Grid > div:nth-child(n + 4) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    align-items: center;
+}
+
+.DV-Grid > div.DV-Anuncio {
+    grid-column: 1;
+    grid-row: 2/5;
+    display: block;
+    border-top: 10px;
+    width: auto;
+}
